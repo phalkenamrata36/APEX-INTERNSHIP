@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>EduSpark - Student Learning Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <h2 class="logo">Edu<span>Spark.</span></h2>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#materials">Study Materials</a></li>
+                <li><a href="#quiz">Practice Quiz</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-content">
+            <p class="tagline">WELCOME TO EDUSPARK</p>
+
+            <h1>Learn Smart.<br>
+                Grow Faster.<br>
+                <span>Shine Brighter.</span>
+            </h1>
+
+            <p class="hero-description">
+                Discover new skills, explore courses and
+                make your learning journey more exciting.
+            </p>
+
+            <a href="#courses" class="main-btn">
+                Start Learning →
+            </a>
+        </div>
+
+        <div class="hero-image">
+            <img
+                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=900"
+                alt="Students learning together">
+        </div>
+
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="section">
+
+        <p class="section-tag">EXPLORE AND LEARN</p>
+        <h2>Our Popular Courses</h2>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <div class="course-icon">🌐</div>
+                <h3>HTML & CSS</h3>
+                <p>Learn to create beautiful and responsive websites.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development"
+                   target="_blank">Explore Course →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">⚡</div>
+                <h3>JavaScript</h3>
+                <p>Learn programming and create interactive websites.</p>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+                   target="_blank">Explore Course →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🐍</div>
+                <h3>Python</h3>
+                <p>Start coding with one of the popular programming languages.</p>
+                <a href="https://www.python.org/about/gettingstarted/"
+                   target="_blank">Explore Course →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">☕</div>
+                <h3>Java</h3>
+                <p>Understand object-oriented programming with Java.</p>
+                <a href="https://dev.java/learn/"
+                   target="_blank">Explore Course →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">💻</div>
+                <h3>C Programming</h3>
+                <p>Build strong programming fundamentals.</p>
+                <a href="https://www.learn-c.org/"
+                   target="_blank">Explore Course →</a>
+            </div>
+
+            <div class="course-card">
+                <div class="course-icon">🚀</div>
+                <h3>C++ Programming</h3>
+                <p>Explore OOP concepts and problem solving.</p>
+                <a href="https://www.learncpp.com/"
+                   target="_blank">Explore Course →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Study Materials Section -->
+    <section id="materials" class="section materials">
+
+        <p class="section-tag">LEARN ANYTIME</p>
+        <h2>Study Materials</h2>
+
+        <div class="material-container">
+
+            <div class="material-card">
+                <h3>📘 HTML Notes</h3>
+                <p>Learn HTML tags, elements and webpage structure.</p>
+                <a href="https://www.w3schools.com/html/"
+                   target="_blank">Read Notes →</a>
+            </div>
+
+            <div class="material-card">
+                <h3>📗 CSS Notes</h3>
+                <p>Understand styling, colors, layouts and responsive design.</p>
+                <a href="https://www.w3schools.com/css/"
+                   target="_blank">Read Notes →</a>
+            </div>
+
+            <div class="material-card">
+                <h3>📙 JavaScript Notes</h3>
+                <p>Study variables, functions, events and DOM concepts.</p>
+                <a href="https://www.w3schools.com/js/"
+                   target="_blank">Read Notes →</a>
+            </div>
+
+            <div class="material-card">
+                <h3>📕 Python Notes</h3>
+                <p>Understand Python basics and programming concepts.</p>
+                <a href="https://www.w3schools.com/python/"
+                   target="_blank">Read Notes →</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Practice Quiz Section -->
+    <section id="quiz" class="section quiz-section">
+
+        <p class="section-tag">TEST YOUR KNOWLEDGE</p>
+        <h2>Practice Quiz</h2>
+
+        <div class="quiz-box">
+
+            <h3>What does HTML stand for?</h3>
+
+            <label>
+                <input type="radio" name="answer" value="a">
+                Hyper Text Markup Language
+            </label>
+
+            <label>
+                <input type="radio" name="answer" value="b">
+                High Text Machine Language
+            </label>
+
+            <label>
+                <input type="radio" name="answer" value="c">
+                Hyper Tool Multi Language
+            </label>
+
+            <button onclick="checkAnswer()">Submit Answer</button>
+
+            <p id="quiz-result"></p>
+
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+
+        <p class="section-tag">GET IN TOUCH</p>
+        <h2>Contact Us</h2>
+
+        <div class="contact-box">
+
+            <form id="contactForm">
+
+                <input type="text"
+                       id="name"
+                       placeholder="Enter your name"
+                       required>
+
+                <input type="email"
+                       id="email"
+                       placeholder="Enter your email"
+                       required>
+
+                <textarea id="message"
+                          placeholder="Write your message"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+                <p id="form-result"></p>
+
+            </form>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>Edu<span>Spark.</span></h2>
+        <p>Learn Smart. Grow Faster. Shine Brighter.</p>
+        <p>© 2026 EduSpark. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
